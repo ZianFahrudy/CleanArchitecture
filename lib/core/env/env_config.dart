@@ -1,8 +1,4 @@
 // ignore_for_file: prefer_constructors_over_static_methods
-
-import 'package:injectable/injectable.dart';
-
-@LazySingleton()
 class EnvConfig {
   EnvConfig({
     this.flavorName,

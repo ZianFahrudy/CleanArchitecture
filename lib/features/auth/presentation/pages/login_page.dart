@@ -5,6 +5,7 @@ import 'package:fl_clean_arch/features/auth/data/models/login_body.dart';
 import 'package:fl_clean_arch/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -44,6 +45,7 @@ class _LoginPageState extends State<LoginPage> {
                   TextField(
                     controller: passController,
                   ),
+                  Text(dotenv.env['BASE_URL'].toString()),
                   const SizedBox(height: 50),
                   ElevatedButton(
                     onPressed: () {

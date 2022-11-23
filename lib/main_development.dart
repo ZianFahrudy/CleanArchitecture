@@ -13,12 +13,14 @@ import 'package:fl_clean_arch/core/env/env_config.dart';
 import 'package:fl_clean_arch/core/env/flavor.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: 'assets/.env_dev');
   FlavorSettings.development();
 
-  bootstrap(() => const App());
+  await bootstrap(() => const App());
 
   ///[console] flavor running
   if (!kReleaseMode) {
