@@ -3,7 +3,7 @@
 import 'package:dartz/dartz.dart';
 
 import 'package:fl_clean_arch/common/error/failure.dart';
-import 'package:fl_clean_arch/features/auth/data/models/login_body.dart';
+import 'package:fl_clean_arch/features/auth/data/models/request/login_body.dart';
 import 'package:fl_clean_arch/features/auth/domain/entities/login_entity.dart';
 
 abstract class AuthRepository {

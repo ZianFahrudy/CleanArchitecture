@@ -13,7 +13,6 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:fl_clean_arch/core/di/injection.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override

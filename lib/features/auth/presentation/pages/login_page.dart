@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:fl_clean_arch/core/di/injection.dart';
-import 'package:fl_clean_arch/features/auth/data/models/login_body.dart';
+import 'package:fl_clean_arch/features/auth/data/models/request/login_body.dart';
 import 'package:fl_clean_arch/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

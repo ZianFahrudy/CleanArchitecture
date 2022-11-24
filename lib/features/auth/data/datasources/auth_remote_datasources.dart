@@ -2,8 +2,9 @@
 
 import 'package:dio/dio.dart';
 import 'package:fl_clean_arch/common/error/exceptions.dart';
-import 'package:fl_clean_arch/features/auth/data/models/login_body.dart';
-import 'package:fl_clean_arch/features/auth/data/models/login_model.dart';
+import 'package:fl_clean_arch/core/constants/api_path.dart';
+import 'package:fl_clean_arch/features/auth/data/models/request/login_body.dart';
+import 'package:fl_clean_arch/features/auth/data/models/response/login_model.dart';
 import 'package:fl_clean_arch/features/auth/domain/entities/login_entity.dart';
 
 abstract class AuthRemoteDataSource {
@@ -19,7 +20,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   Future<LoginEntity> login(LoginBody body) async {
     try {
       final _response = await _client.post<Map<String, dynamic>>(
-        '/api/authaccount/login',
+        ApiPath.login,
         data: body.toJson(),
       );
 

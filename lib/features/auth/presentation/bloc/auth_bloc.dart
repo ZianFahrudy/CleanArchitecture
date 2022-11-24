@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:fl_clean_arch/features/auth/data/models/login_body.dart';
+import 'package:fl_clean_arch/features/auth/data/models/request/login_body.dart';
 import 'package:fl_clean_arch/features/auth/domain/entities/login_entity.dart';
 import 'package:fl_clean_arch/features/auth/domain/usecases/login_usecase.dart';
 

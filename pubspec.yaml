@@ -27,6 +27,7 @@ dependencies:
 dev_dependencies:
   bloc_test: ^9.0.2
   build_runner: ^2.2.1
+  flutter_launcher_icons: ^0.9.3
   flutter_test:
     sdk: flutter
   injectable_generator: ^1.5.4
@@ -39,3 +40,4 @@ flutter:
   generate: true
   assets:
     - assets/
+    - assets/icon/
