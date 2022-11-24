@@ -18,6 +18,7 @@ dependencies:
   flutter_dotenv: ^5.0.2
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.2.15
   get_it: ^7.2.0
   injectable: ^1.5.4
   intl: ^0.17.0
@@ -41,3 +42,4 @@ flutter:
   assets:
     - assets/
     - assets/icon/
+    - assets/splash/
