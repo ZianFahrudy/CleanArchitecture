@@ -28,6 +28,7 @@ dependencies:
 dev_dependencies:
   bloc_test: ^9.0.2
   build_runner: ^2.2.1
+  flutter_gen_runner: ^5.1.0+1
   flutter_launcher_icons: ^0.9.3
   flutter_test:
     sdk: flutter
@@ -36,9 +37,38 @@ dev_dependencies:
   mocktail: ^0.2.0
   very_good_analysis: ^2.4.0
 
+flutter_gen:
+  output: lib/common/gen/ 
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
+
+  assets:
+    enabled: true
+    outputs:
+      class_name: MyAssets
+      package_parameter_enabled: false
+      # Assets.imagesChip
+      # style: camel-case
+
+      # Assets.images_chip
+      # style: snake-case
+
+      # Assets.images.chip (default style)
+      style: dot-delimiter
+
+  colors:
+    enabled: true
+    outputs:
+      class_name: MyColor
+    inputs:
+      - assets/color/colors.xml
+
 flutter:
   uses-material-design: true
-  generate: true
   assets:
     - assets/
     - assets/icon/

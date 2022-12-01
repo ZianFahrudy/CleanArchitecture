@@ -1,5 +1,7 @@
 import 'dart:developer';
 
+import 'package:fl_clean_arch/common/gen/assets.gen.dart';
+import 'package:fl_clean_arch/common/gen/colors.gen.dart';
 import 'package:fl_clean_arch/core/di/injection.dart';
 import 'package:fl_clean_arch/features/auth/data/models/request/login_body.dart';
 import 'package:fl_clean_arch/features/auth/presentation/bloc/auth_bloc.dart';
@@ -35,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
         builder: (context, state) {
           return Scaffold(
             appBar: AppBar(),
-            body: Center(
+            body: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -58,8 +60,13 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       );
                     },
-                    child: const Text('Login'),
-                  )
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(color: MyColor.black),
+                    ),
+                  ),
+                  MyAssets.icon.demoIcon.image(width: 100),
+                  MyAssets.splash.splashLogo.image(width: 200)
                 ],
               ),
             ),
